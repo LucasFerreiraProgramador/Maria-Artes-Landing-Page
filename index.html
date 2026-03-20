@@ -1,0 +1,119 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Mariá Atelier de Artes | Cursos de Pintura em Toledo, PR</title>
+    <meta name="description" content="Mariá Atelier de Artes oferece cursos de pintura em tela, tecido e artesanato em Toledo, Paraná. Carol Queiroz com mais de 35 anos de experiência. Agende sua aula!">
+    <meta name="keywords" content="pintura em tela, cursos de pintura, artesanato, Toledo PR, pintura em tecido, aulas de arte, ateliê de artes">
+    <meta name="author" content="Mariá Atelier de Artes">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mariá Atelier de Artes | Cursos de Pintura em Toledo, PR">
+    <meta property="og:description" content="Cursos de pintura em tela, tecido e artesanato com Carol Queiroz. Mais de 35 anos de experiência in artes.">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mariá Atelier de Artes | Cursos de Pintura em Toledo, PR">
+    <meta name="twitter:description" content="Cursos de pintura em tela, tecido e artesanato com Carol Queiroz. Mais de 35 anos de experiência in artes.">
+    
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#d9617a">
+    <script type="module" src="js/index-kM4sIl_q.js"></script>
+    <link rel="stylesheet" href="css/index-xdkxKihx.css">
+  
+<style>
+	@font-face {
+		font-family: 'CameraPlainVariable';
+		src: url('fonts/CameraPlainVariable.woff2') format('woff2');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	/* Estilos da Assinatura Lucas Ferreira */
+	.assinatura-lucas {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		margin-top: 2rem;
+		padding: 1rem 0;
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		width: 100%;
+		clear: both;
+	}
+	.assinatura-lucas img {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		object-fit: cover;
+		display: block;
+	}
+	.assinatura-lucas a {
+		font-size: 0.85rem;
+		color: #aaa;
+		text-decoration: none;
+		transition: color 0.2s ease;
+		font-family: sans-serif;
+	}
+	.assinatura-lucas a:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
+</style>
+</head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      // Função para injetar a assinatura de forma segura após o carregamento do React
+      (function() {
+        function injectSignature() {
+          const footer = document.querySelector('footer');
+          if (footer && !document.querySelector('.assinatura-lucas')) {
+            const signatureDiv = document.createElement('div');
+            signatureDiv.className = 'assinatura-lucas';
+            signatureDiv.innerHTML = `
+              <img src="images/lucas-ferreira.jpeg" alt="Lucas Ferreira">
+              <a href="https://lucas.ferreiradev.com/" target="_blank" rel="noopener noreferrer">Desenvolvido por Lucas Ferreira</a>
+            `;
+            
+            // Tenta encontrar o container interno do footer para manter o alinhamento
+            const container = footer.querySelector('.container') || footer;
+            container.appendChild(signatureDiv);
+            return true;
+          }
+          return false;
+        }
+
+        // Tenta injetar imediatamente e depois em intervalos caso o React ainda esteja renderizando
+        if (!injectSignature()) {
+          const observer = new MutationObserver((mutations, obs) => {
+            if (injectSignature()) {
+              obs.disconnect();
+            }
+          });
+          observer.observe(document.body, { childList: true, subtree: true });
+          
+          // Fallback de segurança
+          let attempts = 0;
+          const interval = setInterval(() => {
+            attempts++;
+            if (injectSignature() || attempts > 10) {
+              clearInterval(interval);
+            }
+          }, 1000);
+        }
+      })();
+    </script>
+  </body>
+</html>
