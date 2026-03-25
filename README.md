@@ -11,7 +11,7 @@ Uma Landing Page de alta conversão desenvolvida para um atelier de artesanato. 
 • Artesanato personalizado  
 • Peças decorativas  
 • Encomendas sob medida  
-• Produtos exclusivos feitos à mão   
+• Produtos exclusivos feitos à mão    
 • Atendimento direto via WhatsApp  
 
 ---
