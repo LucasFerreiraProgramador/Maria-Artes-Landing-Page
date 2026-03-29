@@ -7,7 +7,7 @@ Uma Landing Page de alta conversão desenvolvida para um atelier de artesanato. 
 ---
 
 ## 🧵 Produtos / Serviços
-
+ 
 • Artesanato personalizado  
 • Peças decorativas  
 • Encomendas sob medida  
